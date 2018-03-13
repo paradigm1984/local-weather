@@ -1,0 +1,21 @@
+{
+  "name": "local-weather",
+  "version": "1.0.0",
+  "description": "a weather app based on location",
+  "main": "Server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "weather"
+  ],
+  "author": "blancooo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.1"
+  }
+}
