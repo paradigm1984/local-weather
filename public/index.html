@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!-- for proper media queries -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="all" href="/css/stylesheet.css"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title> Local Weather </title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="static-icons-container"></div>
+      <div class="heading-container">
+        <span class="heading-1"> Local Weather </span>
+        <span class="heading-2"> Get the weather where you are! </span>
+      </div><!-- END heading-container -->
+      <!-- all data driven content will go below. -->
+      <!-- this is the loader for when we are making the ajax call. -->
+      <div class="loader-container hide">
+        <span> Loading <span>
+        <!-- actual loader -->
+        <div class="loader"></div>
+      </div>
+      <div class="info-body">
+        <div class="info-container">
+          <span class="info" id="city">  </span>
+          <span class="info" id="country">  </span>
+        </div>
+        <div class="info-container">
+          <span class="info" id="temp"> </span>
+          <span class="info" id="temp-unit"> </span>
+          <span class="info" id="weather"> </span>
+        </div>
+        <div class="icon-container">
+          <div class="drizzle hide">
+            <img class="icon" src="../imgs/rain-mix-white.png" alt="drizzle"></img>
+          </div><!-- END shower icon -->
+
+          <div class="thunderstorm hide">
+            <img class="icon" src="../imgs/thunderstorm-white.png" alt="thunderstorm"></img>
+          </div><!-- END thunder storm icon -->
+
+          <div class="clouds hide">
+            <img class="icon" src="../imgs/clouds-white.png" alt="cloudy"></img>
+          </div><!-- END cloudy icon -->
+
+          <div class="snow hide">
+            <img class="icon" src="../imgs/snow-white.png" alt="snow"></img>
+          </div><!-- END snow icon -->
+
+          <div class="clear hide">
+            <img class="icon" src="../imgs/sun-white.png" alt="sunny"></img>
+          </div><!-- END sun icon -->
+
+          <div class="rain hide">
+            <img class="icon" src="../imgs/rain-white.png" alt="raining"></img>
+          </div>
+        </div><!-- END icon-container -->
+      </div><!-- END info-body -->
+    </div><!-- END main-container -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
+  </body>
+</html>

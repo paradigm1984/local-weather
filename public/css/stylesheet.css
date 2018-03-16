@@ -1,0 +1,156 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* =============================================== */
+/* =============================================== */
+
+/* Global */
+body {
+  background-color: #333;
+}
+
+.hide {
+  display: none !important;
+}
+
+/* the container for the static icons at the top for show. */
+.static-icons-container {
+
+}
+
+.main-container {
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.heading-1 {
+  margin: 30px auto 20px auto;
+  font-size: 4em;
+  display: block;
+}
+
+.heading-2 {
+  margin: 20px auto 20px auto;
+  font-size: 1.4em;
+  display: block;
+}
+
+.loader-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.loader-container span {
+	font-size: 1.2em;
+	margin: 30px auto 20px auto;
+}
+
+.loader {
+	margin: 1em auto;
+  border: 16px solid #bdc3c7;
+  width: 80px;
+  height: 80px;
+  border-top-color: #1abc9c;
+  border-bottom-color: #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.info-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.info {
+  margin: 5px 3px;
+	fonr-size: 1.2em;
+}
+
+#temp-unit {
+	cursor: pointer;
+	color: #4dacff;
+}
+
+#temp-unit:hover {
+	color: #006dcc;
+
+}
+
+.icon-container {
+
+}
+
+/* if you have to style individual weather divs, do it here */
+
+.icon {
+  height: 110px;
+  margin-top: 30px;
+}
