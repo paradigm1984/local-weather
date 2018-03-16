@@ -63,6 +63,7 @@ body {
   color: white;
   font-family: sans-serif;
   text-align: center;
+	margin: 3% auto;
 }
 
 .heading-1 {
@@ -73,7 +74,7 @@ body {
 
 .heading-2 {
   margin: 20px auto 20px auto;
-  font-size: 1.4em;
+  font-size: 2em;
   display: block;
 }
 
@@ -83,9 +84,23 @@ body {
 	flex-direction: column;
 }
 
-.loader-container span {
+.loader-info {
 	font-size: 1.2em;
-	margin: 30px auto 20px auto;
+	margin: 40px auto 20px auto;
+}
+
+@media screen and (max-width: 400px) {
+	.heading-1 {
+		font-size: 2.5em
+	}
+
+	.heading-2 {
+		font-size: 1.3em;
+	}
+
+	.loader-info {
+		font-size: .8em;
+	}
 }
 
 .loader {
@@ -148,15 +163,14 @@ body {
 
 }
 
-/* if you have to style individual weather divs, do it here */
-
 .icon {
   height: 110px;
   margin-top: 30px;
 	position: relative;
-
 }
 
+/* editing the box shadow elements in cloud from
+original proportions */
 .cloud {
   position: absolute;
   z-index: 1;
@@ -182,6 +196,7 @@ body {
   box-shadow: 0 0.375rem #fff;
 }
 
+/* using the nth-child selector to grab the second cloud */
 .cloud:nth-child(2) {
   z-index: 0;
   background: #fff;
@@ -301,6 +316,7 @@ body {
   animation: lightning 2s linear infinite;
 }
 
+/* using the nth child selector to grab the second bolt */
 .bolt:nth-child(2) {
   width: 0.5rem;
   height: 0.25rem;

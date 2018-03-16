@@ -80,7 +80,7 @@ $(document).ready(function() {
   // pass in the weather argument for the function to make the call on the switch case.
   function iconDisplay(weather) {
     const weatherSmall = weather.toLowerCase();
-    // test to se if this works!!!
+    // switch case to see what icon to show depending on weather
     switch(weatherSmall) {
       case "drizzle":
         addIcon(weatherSmall)
