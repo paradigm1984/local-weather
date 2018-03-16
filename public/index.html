@@ -6,6 +6,7 @@
     <!-- for proper media queries -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="all" href="/css/stylesheet.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/1.3.2/css/weather-icons.min.css" rel="stylesheet" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title> Local Weather </title>
   </head>
@@ -34,29 +35,65 @@
           <span class="info" id="weather"> </span>
         </div>
         <div class="icon-container">
-          <div class="drizzle hide">
-            <img class="icon" src="../imgs/rain-mix-white.png" alt="drizzle"></img>
-          </div><!-- END shower icon -->
 
+          <div class="icon sun-shower hide ">
+            <div class="cloud"></div>
+            <div class="sun">
+              <div class="rays"></div>
+            </div>
+            <div class="rain"></div>
+          </div>
+
+          <div class="icon thunder-storm hide thunderstom">
+            <div class="cloud"></div>
+            <div class="lightning">
+              <div class="bolt"></div>
+              <div class="bolt"></div>
+            </div>
+          </div>
+
+          <div class="icon cloudy hide clouds">
+            <div class="cloud"></div>
+            <div class="cloud"></div>
+          </div>
+
+          <div class="icon flurries hide snow">
+            <div class="cloud"></div>
+            <div class="snow">
+              <div class="flake"></div>
+              <div class="flake"></div>
+            </div>
+          </div>
+
+          <div class="icon sunny hide clear">
+            <div class="sun">
+              <div class="rays"></div>
+            </div>
+          </div>
+
+          <div class="icon rainy hide rain">
+            <div class="cloud"></div>
+            <div class="rain"></div>
+          </div>
+
+          <!-- <div class="drizzle hide">
+            <img class="icon" src="../imgs/rain-mix-white.png" alt="drizzle"></img>
+          </div>
           <div class="thunderstorm hide">
             <img class="icon" src="../imgs/thunderstorm-white.png" alt="thunderstorm"></img>
-          </div><!-- END thunder storm icon -->
-
+          </div>
           <div class="clouds hide">
             <img class="icon" src="../imgs/clouds-white.png" alt="cloudy"></img>
-          </div><!-- END cloudy icon -->
-
+          </div>
           <div class="snow hide">
             <img class="icon" src="../imgs/snow-white.png" alt="snow"></img>
-          </div><!-- END snow icon -->
-
+          </div>
           <div class="clear hide">
             <img class="icon" src="../imgs/sun-white.png" alt="sunny"></img>
-          </div><!-- END sun icon -->
-
+          </div>
           <div class="rain hide">
             <img class="icon" src="../imgs/rain-white.png" alt="raining"></img>
-          </div>
+          </div> -->
         </div><!-- END icon-container -->
       </div><!-- END info-body -->
     </div><!-- END main-container -->

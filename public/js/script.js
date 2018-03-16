@@ -1,8 +1,6 @@
 // declaring the api url as a variable to be able to get current weather.
 const api = "https://fcc-weather-api.glitch.me/api/current?";
 
-// for dev purposes, setting lat and long and calling the getWeather
-// function alone so i dont have to make calls to the api all the time.
 let lat = ""
 let lon = "";
 
