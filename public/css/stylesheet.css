@@ -61,8 +61,8 @@ body {
 
 .main-container {
   color: white;
-  font-family: sans-serif;
-  text-align: center;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
 	margin: 3% auto;
 }
 
@@ -89,7 +89,7 @@ body {
 	margin: 40px auto 20px auto;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
 	.heading-1 {
 		font-size: 2.5em
 	}
